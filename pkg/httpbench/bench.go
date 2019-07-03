@@ -22,8 +22,8 @@ func (a Results) Less(i, j int) bool { return a[i].CI.Total < a[j].CI.Total }
 //TestOverHTTP tests a url over HTTP after resolving against various resolvers
 func TestOverHTTP(u *url.URL, resolvers []string) Results {
 	var finalresult Results = make([]Result, 0)
+	log.Printf("resolvers: %v\n", resolvers)
 	for _, resolver := range resolvers {
-		log.Printf("resolver: %s\n", resolver)
 		results := make([]*ConInfo, 0)
 		//Issue 10 tests
 		for i := 0; i < 10; i++ {
