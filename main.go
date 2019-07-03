@@ -15,7 +15,7 @@ import (
 	"github.com/miekg/dns"
 	"github.com/montanaflynn/stats"
 	"github.com/olekukonko/tablewriter"
-	"github.com/turbobytes/vadv/pkg/httpbench"
+	"github.com/vadv/dnsperfbench/pkg/httpbench"
 	"golang.org/x/sync/semaphore"
 )
 
